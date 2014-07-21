@@ -84,21 +84,11 @@ public class Date
 		{
 			this.month = this.month +1;
 			this.day-=28;
-			if(this.month >12)
-			{
-				this.month = 1;
-				this.year = this.year +1;
-			}
 		}
 		else if((this.month ==4 || this.month ==6 || this.month ==9 || this.month ==11) && this.day>30)
 		{
 			this.month = this.month +1;
 			this.day -=30;
-			if(this.month >12)
-			{
-				this.month = 1;
-				this.year = this.year +1;
-			}
 		}
 		return this;
    }
